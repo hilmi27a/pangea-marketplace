@@ -32,7 +32,8 @@
     "connect": "moralis-admin-cli connect-local-devchain",
     "watch:events": "moralis-admin-cli add-contract",
 	"predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "node Truffle/scripts/deployContract.js",
+    "deploypage": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
