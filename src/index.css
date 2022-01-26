@@ -58,3 +58,8 @@ textarea,
 select {
   font: inherit;
 }
+
+@font-face {
+  font-family: 'D3Honeycombism';
+  src: local('D3Honeycombism'), url(./fonts/D3Honeycombism.ttf) format('truetype');
+}

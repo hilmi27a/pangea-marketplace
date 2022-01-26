@@ -12,10 +12,12 @@ const styles = {
     fontWeight: "500",
     fontFamily: "Roboto, sans-serif",
     fontSize: "14px",
-    padding: "0 10px",
+    padding: "0 10px", 
+    background: "black",
+    color: "white"
   },
   button: {
-    border: "2px solid rgb(231, 234, 243)",
+    border: "0px solid rgb(231, 234, 243)",
     borderRadius: "12px",
   },
 };
@@ -27,53 +29,13 @@ const menuItems = [
     icon: <ETHLogo />,
   },
   {
-    key: "0x539",
-    value: "Local Chain",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x3",
-    value: "Ropsten Testnet",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x4",
-    value: "Rinkeby Testnet",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x2a",
-    value: "Kovan Testnet",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x5",
-    value: "Goerli Testnet",
-    icon: <ETHLogo />,
-  },
-  {
-    key: "0x38",
-    value: "Binance",
-    icon: <BSCLogo />,
-  },
-  {
-    key: "0x61",
-    value: "Smart Chain Testnet",
-    icon: <BSCLogo />,
-  },
-  {
-    key: "0x89",
-    value: "Polygon",
-    icon: <PolygonLogo />,
-  },
-  {
-    key: "0x13881",
-    value: "Mumbai",
-    icon: <PolygonLogo />,
-  },
-  {
     key: "0xa86a",
     value: "Avalanche",
+    icon: <AvaxLogo />,
+  },
+  {
+    key: "0xa869",
+    value: "Fuji",
     icon: <AvaxLogo />,
   },
 ];
@@ -109,9 +71,9 @@ function Chains() {
   return (
     <div>
       <Dropdown overlay={menu} trigger={["click"]}>
-        <Button key={selected?.key} icon={selected?.icon} style={{ ...styles.button, ...styles.item }}>
-          <span style={{ marginLeft: "5px" }}>{selected?.value}</span>
-          <DownOutlined />
+        <Button key={selected?.key} icon={selected?.icon} style={{ ...styles.button, ...styles.item}}>
+          <span style={{ marginLeft: "5px", background: "black", color: "white" }}>{selected?.value}</span>
+          <DownOutlined style={{ color: "white" }}/>
         </Button>
       </Dropdown>
     </div>

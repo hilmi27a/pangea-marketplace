@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
-import { useMoralis } from "react-moralis";
+import { useMoralisWeb3Api, useMoralisWeb3ApiCall, useMoralis } from "react-moralis";
 import { getEllipsisTxt } from "../../helpers/formatters";
 import useNativeTransactions from "hooks/useNativeTransactions";
 import 'antd/dist/antd.css';
 import { Skeleton, Table } from 'antd'
 import styles from "./styles";
+import Account from "components/Account";
 
 function NativeTransactions() {
+  const { account } = useMoralisWeb3Api();
   const { nativeTransactions, chainId } = useNativeTransactions();
   const { Moralis } = useMoralis();
   useEffect(() => {

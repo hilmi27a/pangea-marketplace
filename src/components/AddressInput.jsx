@@ -15,7 +15,6 @@ function AddressInput(props) {
     resolve: { resolveDomain },
   } = useMoralisWeb3Api();
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (validatedAddress) props.onChange(isDomain ? validatedAddress : address);
   }, [props, validatedAddress, isDomain, address]);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useMoralis, useNFTBalances } from "react-moralis";
-import { Card, Image, Tooltip, Modal, Input, Skeleton } from "antd";
+import { useMoralis, useNFTBalances, useWeb3ExecuteFunction } from "react-moralis";
+import { Alert, Card, Image, Tooltip, Modal, Input, Skeleton } from "antd";
 import { FileSearchOutlined, SendOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { getExplorer } from "helpers/networks";
 import AddressInput from "./AddressInput";
@@ -26,6 +26,7 @@ function NFTBalance() {
   const [receiverToSend, setReceiver] = useState(null);
   const [amountToSend, setAmount] = useState(null);
   const [nftToSend, setNftToSend] = useState(null);
+  const [nftToSell, setNftToSell] = useState(null);
   const [isPending, setIsPending] = useState(false);
 
   async function transfer(nft, amount, receiver) {
@@ -53,7 +54,7 @@ function NFTBalance() {
   }
 
   const handleTransferClick = (nft) => {
-    setNftToSend(nft);
+    setNftToSell(nft);
     setVisibility(true);
   };
 
@@ -76,11 +77,8 @@ function NFTBalance() {
                       onClick={() => window.open(`${getExplorer(chainId)}address/${nft.token_address}`, "_blank")}
                     />
                   </Tooltip>,
-                  <Tooltip title="Transfer NFT">
-                    <SendOutlined onClick={() => handleTransferClick(nft)} />
-                  </Tooltip>,
-                  <Tooltip title="Sell On OpenSea">
-                    <ShoppingCartOutlined onClick={() => alert("OPENSEA INTEGRATION COMING!")} />
+                  <Tooltip title="List NFT">
+                    <ShoppingCartOutlined onClick={() => alert("Add MarketPlace Smart Contract Integrations!")} />
                   </Tooltip>,
                 ]}
                 style={{ width: 240, border: "2px solid #e7eaf3" }}
@@ -101,18 +99,25 @@ function NFTBalance() {
         </Skeleton>
       </div>
       <Modal
-        title={`Transfer ${nftToSend?.name || "NFT"}`}
-        visible={visible}
-        onCancel={() => setVisibility(false)}
-        onOk={() => transfer(nftToSend, amountToSend, receiverToSend)}
-        confirmLoading={isPending}
-        okText="Send"
-      >
-        <AddressInput autoFocus placeholder="Receiver" onChange={setReceiver} />
-        {nftToSend && nftToSend.contract_type === "erc1155" && (
-          <Input placeholder="amount to send" onChange={(e) => handleChange(e)} />
-        )}
-      </Modal>
+            title={`Sell ${nftToSell?.name} #${nftToSell?.token_id}`}
+            visible={visible}
+            onCancel={() => setVisibility(false)}
+            onOk={() => setVisibility(false)}
+          >
+            <img
+              src={nftToSell?.image}
+              style={{
+                width: "250px",
+                margin: "auto",
+                borderRadius: "10px",
+                marginBottom: "15px",
+              }}
+            />
+            <Alert
+              message="This NFT is currently not for sale"
+              type="warning"
+            />
+          </Modal>
     </>
   );
 }
