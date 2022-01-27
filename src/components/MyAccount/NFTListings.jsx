@@ -800,14 +800,14 @@ function NFTListings() {
   
       {nftAssets !== undefined &&(
       <Modal
-        title={(nftAssets)?.name? (nftAssets).name : nftAssets.name }
+        title={(nftAssets)?.name? (nftAssets)?.name : nftAssets?.name }
         visible={visible}
         onCancel={() => setVisibility(false)}
         cancelText = "Return"
-        onOk={() => (nftAssets.status === "Pending" || nftAssets.status === "In-Progress")? onCanvasClick(true, nftAssets.type) 
-        : (nftAssets.status === "Published")? buyNFT(nftAssets) : setVisibility(false)}
-        okText={(nftAssets.status === "Pending" || nftAssets.status === "In-Progress")? "Options" 
-        : (nftAssets.status === "Published")? "Buy" : "OK"}
+        onOk={() => (nftAssets?.status === "Pending" || nftAssets?.status === "In-Progress")? onCanvasClick(true, nftAssets.type) 
+        : (nftAssets?.status === "Published")? buyNFT(nftAssets) : setVisibility(false)}
+        okText={(nftAssets?.status === "Pending" || nftAssets?.status === "In-Progress")? "Options" 
+        : (nftAssets?.status === "Published")? "Buy" : "OK"}
       >
         <Spin spinning={loading} size="large" tip="In Progress...">
           <div style={{display:"block",
@@ -818,8 +818,8 @@ function NFTListings() {
             <img
               src={nftImage}
               alt=""
-              className={nftAssets.sold ? "img-grayscale" : ""}
-              onClick={() => nftAssets.sold ? onCanvasClick(false, nftAssets.type) : onCanvasClick(true, nftAssets.type)}
+              className={nftAssets?.sold ? "img-grayscale" : ""}
+              onClick={() => nftAssets?.sold ? onCanvasClick(false, nftAssets.type) : onCanvasClick(true, nftAssets.type)}
               style={{display:"block",
               height: "100%",
               width: "100%",
@@ -829,7 +829,7 @@ function NFTListings() {
               marginBottom: "15px",
               cursor:"pointer"}}
             />
-            {nftAssets.orderRequest ? (
+            {nftAssets?.orderRequest ? (
               <Badge.Ribbon 
                 text={nftAssets.status} 
                 color={nftAssets.status === "Rejected"? "red" 
@@ -839,7 +839,7 @@ function NFTListings() {
 
               </Badge.Ribbon>
                 ) : ( 
-                nftAssets.sold ? (
+                nftAssets?.sold ? (
                   <Badge.Ribbon text="Sold!" color="black"></Badge.Ribbon>
                   ) : (
                   <Badge.Ribbon text="Published!" color="orangered"></Badge.Ribbon>
@@ -848,7 +848,7 @@ function NFTListings() {
             }
           </div>
 
-          {nftAssets.orderRequest ? (
+          {nftAssets?.orderRequest ? (
             <Alert
               message={nftAssets.status === "Rejected" ? "This order is Rejected" 
                     : nftAssets.status === "In-Progress" ? "This order is currently In-Progress!"
@@ -865,7 +865,7 @@ function NFTListings() {
               }}
             />
             ) : ( 
-            nftAssets.sold ? (
+            nftAssets?.sold ? (
               <Alert
                 message="This NFT has been sold!"
                 type="success"
