@@ -156,7 +156,7 @@ Once the orders have been accepted, the orders can be purchased. Once purchased,
 
 ### Checkout Pangea Demo through the link below
 
-# ![Pangea](https://user-images.githubusercontent.com/58431844/151414248-f7425a28-db4a-427e-bedd-fc5fe505bd53.png)[Pangea - DEMO Link](https://hilmi27a.github.io/home)
+# ![Pangea](https://user-images.githubusercontent.com/58431844/151414248-f7425a28-db4a-427e-bedd-fc5fe505bd53.png)[Pangea - DEMO Link](https://hilmi27a.github.io/pangea-marketplace/)
 
 
 
