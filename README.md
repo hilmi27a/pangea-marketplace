@@ -90,7 +90,7 @@ The Dashboard tab has 3 sub tabs:
 
 
 # 📈 My Accounts
-This tab represents the every transactions status for the owner of the accounts. Transactions will have any of the status below depending on the type of transaction involves.
+This tab represents every transactions status for the owner of the accounts. Transactions will have any of the status in [`📃Transaction Status`](#-transaction-status) depending on the type of transaction involves.
 There are 4 sub tabs under `My Accounts`
 - `Collections`  : Collections of assets belonging to the authenticated account
 - `Listings`     : Assets or Orders created thats published to the `Pangea` Marketplace
@@ -114,7 +114,7 @@ There are 4 sub tabs under `My Accounts`
 ## 📖 Order Tracking
 Logistical type orders like navigation, delivery, observation...etc can have a tracking protocol attached to the instance of the orders.
 These orders will have the status `In Progress` untill either party confirms the delivery and promote the status to `Complete`
-Below are the example of  a drone tracking by updating Moralis DB in real time with the drones onboard geolocation device.
+Below are the example of a drone tracking by updating Moralis DB in real time with the drones onboard geolocation device.
 
 ![frontpage-request-tracking](https://user-images.githubusercontent.com/58431844/151407973-21fdf393-7b3e-46bb-9edb-ee05fb1a5f1d.png)
 
