@@ -90,7 +90,7 @@ The Dashboard tab has 3 sub tabs:
 
 
 # 📈 My Accounts
-This tab represents every transactions status for the owner of the accounts. Transactions will have any of the status in [📃Transaction Status](#📃-transaction-status) depending on the type of transaction involves.
+This tab represents every transactions status for the owner of the accounts.
 There are 4 sub tabs under `My Accounts`
 - `Collections`  : Collections of assets belonging to the authenticated account
 - `Listings`     : Assets or Orders created thats published to the `Pangea` Marketplace
@@ -100,11 +100,12 @@ There are 4 sub tabs under `My Accounts`
 ![frontpage-myaccounts status](https://user-images.githubusercontent.com/58431844/151407714-3b8b399a-4ee2-4115-bf09-188d880e43dd.png)
 
 ## 📃Transaction Status
+Transactions will have any of the status below depending on the type of transactions involved.
 - `Pending`     - Transactions thats pending approval
 - `Waiting`     - Transactions thats awaiting purchase or respond from the requesting party
 - `In Progress` - Transactions thats approved and are currently in progress where applicable. 
-- `Completed`   - Transactions tht have been completed
-- `Rejected`    - Rejected transactions will no longer be valid and will be nullified
+- `Completed`   - Transactions that have been completed
+- `Rejected`    - Rejected transactions will no longer be valid and the order(s) will be nullified
 
 ![frontpage-myaccounts listings](https://user-images.githubusercontent.com/58431844/151407626-5569d596-b04a-418a-a651-9cfe8f38780c.png)
 ![frontpage-myaccounts orders](https://user-images.githubusercontent.com/58431844/151408591-df482c9a-6c40-40aa-b646-4380111402be.png)
