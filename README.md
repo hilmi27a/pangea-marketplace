@@ -90,7 +90,7 @@ The Dashboard tab has 3 sub tabs:
 
 
 # 📈 My Accounts
-This tab represents every transactions status for the owner of the accounts. Transactions will have any of the status in [📃Transaction Status](#-transaction-status) depending on the type of transaction involves.
+This tab represents every transactions status for the owner of the accounts. Transactions will have any of the status in [📃Transaction Status](#📃-transaction-status) depending on the type of transaction involves.
 There are 4 sub tabs under `My Accounts`
 - `Collections`  : Collections of assets belonging to the authenticated account
 - `Listings`     : Assets or Orders created thats published to the `Pangea` Marketplace
