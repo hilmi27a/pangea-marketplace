@@ -1,9 +1,16 @@
-# ![pangea-title](https://user-images.githubusercontent.com/58431844/151583126-99b5a800-ce31-4dd5-b3a2-d79233300655.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/58431844/151583126-99b5a800-ce31-4dd5-b3a2-d79233300655.png" alt="">
+</p>
 
+#
 # 🏛️ Pangea - Marketplace!
 
 This Project is derived from a cloned repo of [Ethereum Boilerplate](https://github.com/ethereum-boilerplate/ethereum-unity-boilerplate) and innovated to showcase the administrative, fleet management and logistics capabilities of dApp services via Moralis and Avalanche integration for drones or UAVs and possibly non aerial logistics like the postal service or even for communication service deployment. This project mainly shows the potential of blockchain being used as a logistical tools. In the case of this porject its the Fleet Management of drones and its mission request orders be it urban planning, navigation, observation, emergency medical kit deployment or just as a simple courier service. The application shows that with Moralis API and backend integration and powered by Avalanche Network chain, Its possible to create the a decentralised Administrative or Fleet Management dApp.  
-  
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/58431844/151638239-e17fdc7c-280b-4b4d-a977-a8578afc5ba2.png" alt="">
+</p>
+
 >Please check the [official documentation of Moralis](https://docs.moralis.io/introduction/readme) for all the functionalities of Moralis.
 
 >All images, icons and fonts are captured and acquired from google images and free-fonts.com. This project does not take credit for any of these visuals and are meant to serve as a demo. Any modification derive from this repository will have to recreate/change the visual assets. 
@@ -153,8 +160,7 @@ Below are exaamples of how the `Cafe` layout mode shows the `Point Of Sales` dAp
 After receiving the request orders, the provider can `Reject` or `Confirm` the orders. Confirmed orders will be shown in teh users listings under `My Account` -> `Listings`
 Once the orders have been accepted, the orders can be purchased. Once purchased, the orders will show in the listings of the user's account and will show the bulk of the orders purchased:
 
-![frontpage-cafe-bulk-tokens](https://user-images.githubusercontent.com/58431844/151412562-e64a7a5b-bfc6-42e1-aa3e-5204c7a14518.png)
-
+![frontpage-cafe-bulk-tokens](https://user-images.githubusercontent.com/58431844/151638764-9e5ad662-988c-4be9-9781-da974f655b58.png)
 
 ### 🌐 Checkout Pangea Demo through the link below
 
