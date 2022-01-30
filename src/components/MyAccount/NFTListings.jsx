@@ -48,7 +48,7 @@ function NFTListings() {
   const [NFTOrdered, setNFTOrdered] = useState([]);
   const [NFTSold, setNFTSold] = useState([]);
   const [loading, setLoading] = useState(false)
-  const { Moralis, chainId, account } = useMoralis();
+  const { Moralis, chainId, account, user } = useMoralis();
   const [visible, setVisibility] = useState(false);
   const [zoomCanvas, setZoomCanvas] = useState(false);
   const [amountToSend, setAmount] = useState(null);
@@ -494,9 +494,14 @@ function NFTListings() {
     var keyIdx = 0
 
     const Orders = Moralis.Object.extend("Orders");
-    const query = new Moralis.Query(Orders);
-    query.equalTo("marketplace", MARKETPLACE_ADDR);
-    const object = await query.find();
+    const queryTarget = new Moralis.Query(Orders);
+    queryTarget.equalTo("target", account);
+    
+    const queryMarket = new Moralis.Query(Orders);
+    queryMarket.equalTo("marketplace", user.attributes.marketplace);
+
+    const mainQuery = Moralis.Query.or(queryTarget, queryMarket);
+    const object = await mainQuery.find();
 
     setFetchOrders(object)
 
