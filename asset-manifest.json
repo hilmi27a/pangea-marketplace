@@ -1,23 +1,33 @@
 {
   "files": {
-    "main.css": "/ethereum-boilerplate/static/css/main.8ed4dda1.chunk.css",
-    "main.js": "/ethereum-boilerplate/static/js/main.4e5f51b6.chunk.js",
-    "main.js.map": "/ethereum-boilerplate/static/js/main.4e5f51b6.chunk.js.map",
-    "runtime-main.js": "/ethereum-boilerplate/static/js/runtime-main.57c875bf.js",
-    "runtime-main.js.map": "/ethereum-boilerplate/static/js/runtime-main.57c875bf.js.map",
-    "static/css/2.a95be28f.chunk.css": "/ethereum-boilerplate/static/css/2.a95be28f.chunk.css",
-    "static/js/2.9a5b5e39.chunk.js": "/ethereum-boilerplate/static/js/2.9a5b5e39.chunk.js",
-    "static/js/2.9a5b5e39.chunk.js.map": "/ethereum-boilerplate/static/js/2.9a5b5e39.chunk.js.map",
-    "index.html": "/ethereum-boilerplate/index.html",
-    "static/css/2.a95be28f.chunk.css.map": "/ethereum-boilerplate/static/css/2.a95be28f.chunk.css.map",
-    "static/css/main.8ed4dda1.chunk.css.map": "/ethereum-boilerplate/static/css/main.8ed4dda1.chunk.css.map",
-    "static/js/2.9a5b5e39.chunk.js.LICENSE.txt": "/ethereum-boilerplate/static/js/2.9a5b5e39.chunk.js.LICENSE.txt"
+    "main.css": "/pangea-marketplace/static/css/main.2d64ba7e.chunk.css",
+    "main.js": "/pangea-marketplace/static/js/main.fd91533e.chunk.js",
+    "main.js.map": "/pangea-marketplace/static/js/main.fd91533e.chunk.js.map",
+    "runtime-main.js": "/pangea-marketplace/static/js/runtime-main.c5b027dc.js",
+    "runtime-main.js.map": "/pangea-marketplace/static/js/runtime-main.c5b027dc.js.map",
+    "static/css/2.a95be28f.chunk.css": "/pangea-marketplace/static/css/2.a95be28f.chunk.css",
+    "static/js/2.e4fea2b1.chunk.js": "/pangea-marketplace/static/js/2.e4fea2b1.chunk.js",
+    "static/js/2.e4fea2b1.chunk.js.map": "/pangea-marketplace/static/js/2.e4fea2b1.chunk.js.map",
+    "index.html": "/pangea-marketplace/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/pangea-marketplace/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.2d64ba7e.chunk.css.map": "/pangea-marketplace/static/css/main.2d64ba7e.chunk.css.map",
+    "static/js/2.e4fea2b1.chunk.js.LICENSE.txt": "/pangea-marketplace/static/js/2.e4fea2b1.chunk.js.LICENSE.txt",
+    "static/media/Avalanche.png": "/pangea-marketplace/static/media/Avalanche.5378e81c.png",
+    "static/media/index.css": "/pangea-marketplace/static/media/D3Honeycombism.ed50284a.ttf",
+    "static/media/Moralis.png": "/pangea-marketplace/static/media/Moralis.8843ed09.png",
+    "static/media/drone-comm.bb8b7f6b.png": "/pangea-marketplace/static/media/drone-comm.bb8b7f6b.png",
+    "static/media/drone-delivery.9de0b843.png": "/pangea-marketplace/static/media/drone-delivery.9de0b843.png",
+    "static/media/drone-dispatch.66f3f147.png": "/pangea-marketplace/static/media/drone-dispatch.66f3f147.png",
+    "static/media/drone-nav.ac4526d9.png": "/pangea-marketplace/static/media/drone-nav.ac4526d9.png",
+    "static/media/drone-recon.4fcb2d67.png": "/pangea-marketplace/static/media/drone-recon.4fcb2d67.png",
+    "static/media/hexic.png": "/pangea-marketplace/static/media/hexic.1d295e3d.png",
+    "static/media/metamask.svg": "/pangea-marketplace/static/media/metamask.3a664705.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.57c875bf.js",
+    "static/js/runtime-main.c5b027dc.js",
     "static/css/2.a95be28f.chunk.css",
-    "static/js/2.9a5b5e39.chunk.js",
-    "static/css/main.8ed4dda1.chunk.css",
-    "static/js/main.4e5f51b6.chunk.js"
+    "static/js/2.e4fea2b1.chunk.js",
+    "static/css/main.2d64ba7e.chunk.css",
+    "static/js/main.fd91533e.chunk.js"
   ]
 }
