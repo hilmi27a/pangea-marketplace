@@ -21,7 +21,7 @@ function SearchAssetType({setInputValue}){
                     color:"gray" }}
             placeholder="Select Mission Type"
             optionFilterProp="children"
-         onChange={onChange}
+            onChange={onChange}
         >   
             {Assets && 
                 Assets.map((asset, i) => 

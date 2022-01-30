@@ -9,6 +9,7 @@ class Form extends Component {
         this.assetPrice = React.createRef();
         this.assetType  = React.createRef();
         this.assetWeight  = React.createRef();
+        this.assetUnit  = React.createRef();
     }
 
     state = {
@@ -17,7 +18,13 @@ class Form extends Component {
         name: "", 
         description: "",
         type: "",
-        weight: ""
+        weight: "",
+        unit: ""
+    }
+
+    onChange = (e) => { 
+        var val = e.target.value
+        this.state.unit = val
     }
 
     handleSubmit = () => {
@@ -63,15 +70,27 @@ class Form extends Component {
                     ref={this.assetType}
                 />
             </div>
-            <div style={{opacity:"0.7", marginTop:"10px"}}>
-                <input 
-                    id="assetWeight"
-                    placeholder="Asset Weight"
-                    className=""
-                    type="text"
-                    style={{width:"300px"}}
-                    ref={this.assetWeight}
-                />
+            <div style={{display:"inline-flex"}}>
+                <div style={{opacity:"0.7", marginTop:"10px", display:"inline-block"}}>
+                    <input 
+                        id="assetWeight"
+                        placeholder="Asset Weight"
+                        className=""
+                        type="text"
+                        style={{width:"240px", marginRight:"10px"}}
+                        ref={this.assetWeight}
+                    />
+                </div>
+                <select
+                    id="assetUnit"
+                    onChange={this.onChange}
+                    className="form-control"
+                    ref={this.assetUnit}
+                    style={{display:"inline-block", width:"50px", height:"28px", marginTop:"10px"}}
+                >
+                    <option value="kg">kg</option>
+                    <option value="lb">lb</option>
+                </select>
             </div>
             <div>
                 <textarea
